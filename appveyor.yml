@@ -1,3 +1,10 @@
-version: 1.0.{build}
-build:
-  verbosity: minimal
+image: Ubuntu1804  # образ для сборки
+
+branches:
+  only:
+    - master  # ветка git
+
+build: off  # будем использовать свой скрипт сборки
+
+build_script:
+  - ./gradlew buildverbosity: minimal
