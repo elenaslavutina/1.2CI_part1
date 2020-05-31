@@ -16,8 +16,9 @@
 "type": "integer"
 },
 "name": {
-"type": "string",
+"type": "string","enum": ["Текущий зарплатный счёт","Текущий счёт"],
 "minLength": 1
+
 },
 "number": {
 "type": "string",
