@@ -19,7 +19,7 @@ class MobileBankApiTestV1 {
       // Проверки
       .then()
           .statusCode(200)
-          .body("[2].name", equalTo("Текущий зарплатный счёт"))
+          .body("name[2]", equalTo("Текущий зарплатный счёт"))
         ;
 
     }
